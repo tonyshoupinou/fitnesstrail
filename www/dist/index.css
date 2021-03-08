@@ -79,34 +79,16 @@ header h2 {
   margin-left: 1em; }
 
 header button {
-  /* float: left; */
+  float: left;
   margin-left: 1.5em; }
 
-.select-container {
+body {
   background-image: url(611cbcc13bd1ccc67040a08a3a843913.jpg);
   background-position: center;
   background-origin: content-box;
   background-repeat: no-repeat;
   background-color: #c3e59b; }
 
-.select-container {
-  height: 100vh;
-  position: relative; }
-
-.list-container {
-  position: absolute;
-  bottom: 30px;
-  width: 100%;
-  text-align: center; }
-
-.list-container button {
-  width: 50vw;
-  margin-bottom: 10px;
-  padding: 1em 0px;
-  border: none;
-  border-radius: 8px;
-  background-color: #1e88e5; }
-
-.list-container button a {
-  color: aliceblue; }
+.btn {
+  margin-bottom: 5px; }
 

@@ -1,22 +1,26 @@
-.select-container {
-    height: 100vh;
-    position: relative;
-}
-.list-container {
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
-    text-align: center;
-}
+// .select-container {
+//     height: 100vh;
+//     position: relative;
+// }
+// .list-container {
+//     position: absolute;
+//     bottom: 30px;
+//     width: 100%;
+//     text-align: center;
+// }
 
-.list-container button {
-    width: 50vw;
-    margin-bottom: 10px;
-    padding: 1em 0px;
-    border: none;
-    border-radius: 8px;
-    background-color: #1e88e5;
-}
-.list-container button a {
-    color: aliceblue
+// .list-container button {
+//     width: 50vw;
+//     margin-bottom: 10px;
+//     padding: 1em 0px;
+//     border: none;
+//     border-radius: 8px;
+//     background-color: #1e88e5;
+// }
+// .list-container button a {
+//     color: aliceblue
+// }
+.btn {
+    margin-bottom: 5px;
+    // WARNING : cela affecte TOUS les boutons en ajoutant une marge de 5px en dessous //
 }
