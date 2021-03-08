@@ -1,0 +1,17 @@
+.btn-validation {
+    width: 60%;
+    height: 50px;
+    border: 2px solid rgb(178,255,89);
+    border-radius: 25px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b2ff59+0,5fdb4e+44,398235+100 */
+    background: rgb(178,255,89); /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(178,255,89,1) 0%, rgba(95,219,78,1) 44%, rgba(57,130,53,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(178,255,89,1) 0%,rgba(95,219,78,1) 44%,rgba(57,130,53,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(178,255,89,1) 0%,rgba(95,219,78,1) 44%,rgba(57,130,53,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2ff59', endColorstr='#398235',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    box-shadow: inset 0 0 0 2px white;
+
+    i {
+        margin-left: 0;
+    }
+}

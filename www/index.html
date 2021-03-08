@@ -9,14 +9,34 @@
     <script type="text/javascript" src="./dist/index.js"></script>
 </head>
 <body>
-    <h1>fitnesstrail</h1>
-    <!-- exemple insertion image informative -->
-    <!-- <img src="./img/parcours.jpg" alt="place holder"> -->
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <ul>
+                    <li class="nav-back"><a href="#!"><i class="material-icons">keyboard_arrow_left</i></a></li>
+                    <li class="name">Name</li>
+                </ul>
+                
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="trailselect.html">Selection</a></li>
+                    <li><a href="map.html">Map</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="trailselect.html">Selection</a></li>
+            <li><a href="map.html">Map</a></li>
+        </ul>
+    </header>
+
     <main class="container">
-        <div class="row">
-            <a class="waves-effect waves-light btn" href="./trailselect.html">Ready?</a>        
-        </div>
+
     </main>
+
     <script type="text/javascript" src="./dist/index.js"></script>
 </body>
 </html>
