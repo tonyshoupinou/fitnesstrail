@@ -34,10 +34,9 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * Ma
 /*!************************!*\
   !*** ./src/index.scss ***!
   \************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Invalid CSS after \\\"}\\\": expected \\\"}\\\", was \\\"\\\"\\n        on line 49 of src/home/home.scss\\n        from line 7 of src/index.scss\\n>> }\\n   ^\\n\\n    at processResult (C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:598:19)\\n    at C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\webpack\\\\lib\\\\NormalModule.js:692:5\\n    at C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:399:11\\n    at C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:251:18\\n    at context.callback (C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\loader-runner\\\\lib\\\\LoaderRunner.js:124:13)\\n    at Object.callback (C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\sass-loader\\\\dist\\\\index.js:54:7)\\n    at Object.done [as callback] (C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\neo-async\\\\async.js:8069:18)\\n    at options.error (C:\\\\Users\\\\dsam6\\\\projet\\\\fitnesstrail\\\\node_modules\\\\node-sass\\\\lib\\\\index.js:293:32)\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.scss?");
 
 /***/ })
 

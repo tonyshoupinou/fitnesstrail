@@ -49,7 +49,8 @@ module.exports = {
             files: [
                 'www/index.html',
                 'www/trailselect.html',
-                'www/map.html'
+                'www/map.html',
+                'www/home.html',
                 // add other files to watch for hot reload
             ],
             server: {
