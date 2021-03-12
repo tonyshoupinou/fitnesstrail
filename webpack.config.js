@@ -13,6 +13,7 @@ module.exports = {
     module: {
         rules: [
             {
+
                 test: /\.html$/,
                 exclude: /node_modules/,
                 use: 'raw-loader',
