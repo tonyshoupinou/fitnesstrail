@@ -16,7 +16,18 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! materialize-css */ \"./node_modules/materialize-css/dist/js/materialize.js\");\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(materialize_css__WEBPACK_IMPORTED_MODULE_0__);\n // navbar\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var elems = document.querySelectorAll('.sidenav');\n  var instances = M.Sidenav.init(elems);\n});\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! materialize-css */ \"./node_modules/materialize-css/dist/js/materialize.js\");\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(materialize_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _trailselect_trailselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./trailselect/trailselect */ \"./src/trailselect/trailselect.js\");\n\n // navbar\n\nM.Sidenav.init(document.querySelectorAll('.sidenav'));\n(0,_trailselect_trailselect__WEBPACK_IMPORTED_MODULE_1__.displayTrailSelectComponent)(\"main\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/trailselect/trailselect.js":
+/*!****************************************!*\
+  !*** ./src/trailselect/trailselect.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayTrailSelectComponent\": () => (/* binding */ displayTrailSelectComponent)\n/* harmony export */ });\n/* harmony import */ var _trailselect_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./trailselect.html */ \"./src/trailselect/trailselect.html\");\n\nvar displayTrailSelectComponent = function displayTrailSelectComponent(selector) {\n  document.querySelector(selector).innerHTML = _trailselect_html__WEBPACK_IMPORTED_MODULE_0__.default;\n};\n\n//# sourceURL=webpack://Fitnesstrail/./src/trailselect/trailselect.js?");
 
 /***/ }),
 
@@ -38,6 +49,17 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\r\n * 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.scss?");
+
+/***/ }),
+
+/***/ "./src/trailselect/trailselect.html":
+/*!******************************************!*\
+  !*** ./src/trailselect/trailselect.html ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"<div class=\\\"row\\\">\\r\\n    <img class=\\\"responsive-img col S6 m6 l6\\\" src=\\\"./img/parcours.jpg\\\" alt=\\\"place holder\\\">    \\r\\n        <a class=\\\"waves-effect waves-light btn col S6 m4 l2 offset-s3 offset-m4 offset-l5\\\"><i class=\\\"material-icons right\\\">looks_one</i>Parcours</a>\\r\\n        <a class=\\\"waves-effect waves-light btn col S6 m4 l2 offset-s3 offset-m4 offset-l5\\\"><i class=\\\"material-icons right\\\">looks_two</i>Parcours</a>\\r\\n        <a class=\\\"waves-effect waves-light btn col S6 m4 l2 offset-s3 offset-m4 offset-l5\\\"><i class=\\\"material-icons right\\\">looks_3</i>Parcours</a>\\r\\n    </div>\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/trailselect/trailselect.html?");
 
 /***/ })
 

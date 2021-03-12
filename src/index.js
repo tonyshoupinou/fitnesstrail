@@ -1,7 +1,8 @@
 import 'materialize-css';
+import { displayTrailSelectComponent } from './trailselect/trailselect';
+
 
 // navbar
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-});
+M.Sidenav.init(document.querySelectorAll('.sidenav'));
+
+displayTrailSelectComponent ("main")
