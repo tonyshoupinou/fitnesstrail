@@ -16,7 +16,51 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! materialize-css */ \"./node_modules/materialize-css/dist/js/materialize.js\");\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(materialize_css__WEBPACK_IMPORTED_MODULE_0__);\n // navbar\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var elems = document.querySelectorAll('.sidenav');\n  var instances = M.Sidenav.init(elems);\n});\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! materialize-css */ \"./node_modules/materialize-css/dist/js/materialize.js\");\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(materialize_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mapComponent_map_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mapComponent/map.component */ \"./src/mapComponent/map.component.js\");\n/* harmony import */ var _mapComponent_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./mapComponent/map */ \"./src/mapComponent/map.js\");\n/* harmony import */ var _shared_navComponent_nav_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./shared/navComponent/nav.component */ \"./src/shared/navComponent/nav.component.js\");\n/* harmony import */ var _shared_navComponent_nav_routing__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./shared/navComponent/nav-routing */ \"./src/shared/navComponent/nav-routing.js\");\n\n\n\n\n\n(0,_mapComponent_map_component__WEBPACK_IMPORTED_MODULE_1__.displayMapComponent)('main');\n(0,_mapComponent_map__WEBPACK_IMPORTED_MODULE_2__.displayMap)(); // navbar\n\n(0,_shared_navComponent_nav_component__WEBPACK_IMPORTED_MODULE_3__.displayNav)();\n(0,_shared_navComponent_nav_routing__WEBPACK_IMPORTED_MODULE_4__.homeRedirection)();\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/mapComponent/map.component.js":
+/*!*******************************************!*\
+  !*** ./src/mapComponent/map.component.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayMapComponent\": () => (/* binding */ displayMapComponent),\n/* harmony export */   \"onValidateStep\": () => (/* binding */ onValidateStep)\n/* harmony export */ });\n/* harmony import */ var _map_component_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map.component.html */ \"./src/mapComponent/map.component.html\");\n\nvar displayMapComponent = function displayMapComponent(selector) {\n  document.querySelector(selector).innerHTML = _map_component_html__WEBPACK_IMPORTED_MODULE_0__.default;\n};\nvar onValidateStep = function onValidateStep() {};\n\n//# sourceURL=webpack://Fitnesstrail/./src/mapComponent/map.component.js?");
+
+/***/ }),
+
+/***/ "./src/mapComponent/map.js":
+/*!*********************************!*\
+  !*** ./src/mapComponent/map.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayMap\": () => (/* binding */ displayMap)\n/* harmony export */ });\nvar displayMap = function displayMap() {\n  var body = document.querySelector('body');\n  var script = document.createElement('script');\n  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD21vP4lQ5LA5g_GrU0ivkXLUMO0BIKz2s';\n  script.type = 'text/javascript';\n  script.async = true;\n  script.defer = true;\n  script.onload = initMap;\n  body.appendChild(script);\n};\n\nvar initMap = function initMap() {\n  var showPosition = function showPosition(position) {\n    var coords = {\n      lat: position.coords.latitude,\n      lng: position.coords.longitude\n    };\n    var map = new google.maps.Map(document.querySelector(\".display-map\"), {\n      zoom: 15,\n      center: coords\n    });\n    var marker = new google.maps.Marker({\n      position: coords,\n      map: map\n    });\n  };\n\n  if (navigator.geolocation) {\n    navigator.geolocation.getCurrentPosition(showPosition);\n  } else {\n    map.innerHTML = \"Geolocation is not supported by this browser.\";\n  }\n};\n\n//# sourceURL=webpack://Fitnesstrail/./src/mapComponent/map.js?");
+
+/***/ }),
+
+/***/ "./src/shared/navComponent/nav-routing.js":
+/*!************************************************!*\
+  !*** ./src/shared/navComponent/nav-routing.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"homeRedirection\": () => (/* binding */ homeRedirection)\n/* harmony export */ });\nvar homeRedirection = function homeRedirection() {\n  var homeLink = document.querySelector('.home-link');\n\n  homeLink.onclick = function (e) {\n    e.preventDefault();\n    console.log('ok');\n  };\n};\n\n//# sourceURL=webpack://Fitnesstrail/./src/shared/navComponent/nav-routing.js?");
+
+/***/ }),
+
+/***/ "./src/shared/navComponent/nav.component.js":
+/*!**************************************************!*\
+  !*** ./src/shared/navComponent/nav.component.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayNav\": () => (/* binding */ displayNav)\n/* harmony export */ });\n/* harmony import */ var _nav_component_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./nav.component.html */ \"./src/shared/navComponent/nav.component.html\");\n\nvar displayNav = function displayNav() {\n  document.querySelector('header').innerHTML = _nav_component_html__WEBPACK_IMPORTED_MODULE_0__.default;\n  M.Sidenav.init(document.querySelectorAll('.sidenav'));\n};\n\n//# sourceURL=webpack://Fitnesstrail/./src/shared/navComponent/nav.component.js?");
 
 /***/ }),
 
@@ -38,6 +82,28 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\r\n * 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.scss?");
+
+/***/ }),
+
+/***/ "./src/mapComponent/map.component.html":
+/*!*********************************************!*\
+  !*** ./src/mapComponent/map.component.html ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"<div class=\\\"screen-map\\\">  \\r\\n    <div class=\\\"container map-display\\\">\\r\\n        <div class=\\\"row timer\\\">\\r\\n            <div class=\\\"col s12 timer-display\\\">\\r\\n                <i class=\\\"material-icons\\\">hourglass_empty</i>\\r\\n                <p>00:00</p>\\r\\n            </div>\\r\\n        </div>  \\r\\n\\r\\n        <div class=\\\"row map-tab\\\">\\r\\n            <div class=\\\"col s12 m6 map\\\">\\r\\n                <div class=\\\"display-map\\\"></div>\\r\\n            </div>\\r\\n\\r\\n            <div class=\\\"col s12 m6 info\\\">\\r\\n                <div class=\\\"checkpoints\\\">\\r\\n                    <ul>\\r\\n                        <li><span class=\\\"step step-checked\\\"></span></li>\\r\\n                        <li><span class=\\\"step\\\"></span></li>\\r\\n                        <li><span class=\\\"step\\\"></span></li>\\r\\n                        <li><span class=\\\"step\\\"></span></li>\\r\\n                        <li><span class=\\\"step\\\"></span></li>\\r\\n                    </ul>\\r\\n                </div>\\r\\n                \\r\\n                <div class=\\\"validation\\\">\\r\\n                    <p>\\r\\n                        Rendez vous au point\\r\\n                        <br> \\\"adresse\\\"\\r\\n                        <br> pour commencer votre parcours\\r\\n                    </p>\\r\\n    \\r\\n                    <button class=\\\"waves-effect waves-light btn btn-validation\\\">Valider<i class=\\\"material-icons right\\\">check</i></button>\\r\\n                </div>    \\r\\n            </div>  \\r\\n        </div>\\r\\n    </div>\\r\\n</div>\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/mapComponent/map.component.html?");
+
+/***/ }),
+
+/***/ "./src/shared/navComponent/nav.component.html":
+/*!****************************************************!*\
+  !*** ./src/shared/navComponent/nav.component.html ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"<header>\\r\\n    <nav>\\r\\n        <div class=\\\"nav-wrapper\\\">\\r\\n            <ul>\\r\\n                <li class=\\\"back-home\\\"><a class=\\\"home-link\\\"><i class=\\\"material-icons\\\">home</i></a></li>\\r\\n                <li class=\\\"nav-back\\\"><a class=\\\"back-link\\\"><i class=\\\"material-icons\\\">keyboard_arrow_left</i></a></li>\\r\\n                <li class=\\\"name\\\">Name</li>\\r\\n            </ul>\\r\\n            \\r\\n            <a href=\\\"#\\\" data-target=\\\"mobile-nav\\\" class=\\\"sidenav-trigger\\\"><i class=\\\"material-icons\\\">menu</i></a>\\r\\n            <ul class=\\\"right hide-on-med-and-down\\\">\\r\\n                <li><a class=\\\"home-link\\\">Home</a></li>\\r\\n                <li><a class=\\\"select-link\\\">Selection</a></li>\\r\\n                <li><a class=\\\"map-link\\\">Map</a></li>\\r\\n            </ul>\\r\\n        </div>\\r\\n    </nav>\\r\\n    \\r\\n    <ul class=\\\"sidenav\\\" id=\\\"mobile-nav\\\">\\r\\n        <li><a class=\\\"home-link\\\">Home</a></li>\\r\\n        <li><a class=\\\"select-link\\\">Selection</a></li>\\r\\n        <li><a class=\\\"map-link\\\">Map</a></li>\\r\\n    </ul>\\r\\n</header>\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/shared/navComponent/nav.component.html?");
 
 /***/ })
 

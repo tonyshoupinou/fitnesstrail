@@ -1,23 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
     /* A FAIRE Definition des tailles et couleurs de police */
-    }
-header {
-    z-index: 10;
-    background-color: #1e88e5;
-    position: fixed;
-    width: 100%;
-}
-header h2 {
-    display: inline-block;
-    color: #ffffff;
-    margin-left: 1em; 
-}
-header button {
-    float: left;
-    margin-left: 1.5em;
-}
-body {
     background-image: url("./../assets/img/Background.jpg");
     background-position: center;
     background-origin: content-box;

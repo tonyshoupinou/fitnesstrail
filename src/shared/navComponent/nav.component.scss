@@ -11,7 +11,23 @@ nav {
             display: inline-block;
             font-size: 3rem;
         }
-    }  
+    } 
+    
+    .back-home {
+        a {
+            padding: 0;
+            margin-left: 15px;
+
+            :hover {
+                background-color: none;
+            }
+        }
+
+        i {
+            display: inline-block;
+            font-size: 2rem;
+        }
+    } 
 
     .name {
         font-size: 1.2em;
@@ -20,4 +36,6 @@ nav {
     .sidenav-trigger {
         float: right;
     }
+
+    overflow: hidden;
 }
