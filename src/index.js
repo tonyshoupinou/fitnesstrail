@@ -8,7 +8,7 @@ import {displayHomeComponent} from './home/home';
 
 displayTrailSelectComponent ("main");
 displayHomeComponent("main");
-displayTrailSelectComponent ("main")
+displayTrailSelectComponent ("main");
 displayMapComponent('main');
 displayMap();
 
