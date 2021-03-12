@@ -13,6 +13,12 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html$/i,
+                use: 'raw-loader',
+              },
+
+
+            {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',

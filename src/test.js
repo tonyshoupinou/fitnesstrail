@@ -1,0 +1,1 @@
+const divMyIndex = document.querySelector('.myIndex');

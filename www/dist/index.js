@@ -9,6 +9,17 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/home/home.js":
+/*!**************************!*\
+  !*** ./src/home/home.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"displayHomeComponent\": () => (/* binding */ displayHomeComponent)\n/* harmony export */ });\n/* harmony import */ var _home_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.html */ \"./src/home/home.html\");\n\nvar displayHomeComponent = function displayHomeComponent(selector) {\n  document.querySelector(selector).innerHTML = _home_html__WEBPACK_IMPORTED_MODULE_0__.default;\n};\n\n//# sourceURL=webpack://Fitnesstrail/./src/home/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -16,7 +27,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! materialize-css */ \"./node_modules/materialize-css/dist/js/materialize.js\");\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(materialize_css__WEBPACK_IMPORTED_MODULE_0__);\n // navbar\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  var elems = document.querySelectorAll('.sidenav');\n  var instances = M.Sidenav.init(elems);\n});\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! materialize-css */ \"./node_modules/materialize-css/dist/js/materialize.js\");\n/* harmony import */ var materialize_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(materialize_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _home_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home */ \"./src/home/home.js\");\n\n\n(0,_home_home__WEBPACK_IMPORTED_MODULE_1__.displayHomeComponent)(\"main\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.js?");
 
 /***/ }),
 
@@ -38,6 +49,17 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\r\n * 
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://Fitnesstrail/./src/index.scss?");
+
+/***/ }),
+
+/***/ "./src/home/home.html":
+/*!****************************!*\
+  !*** ./src/home/home.html ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"<div class=\\\"container logo\\\">\\r\\n    <img src=\\\"\\\" alt=\\\"Fitness Trail logo\\\"/>\\r\\n\\r\\n    <div class=\\\"row home-row\\\">     \\r\\n        <button class=\\\"waves-effect waves-light btn col s4 offset-s3\\\"><i class=\\\"material-icons left\\\">cloud</i>S'inscrire</button>\\r\\n    </div>\\r\\n\\r\\n    <div class=\\\"row home-row\\\">\\r\\n        <button class=\\\"waves-effect waves-light btn col s4 offset-s3\\\"><i class=\\\"material-icons left\\\">cloud</i>Se connecter</b>\\r\\n    </div>\\r\\n</div>\");\n\n//# sourceURL=webpack://Fitnesstrail/./src/home/home.html?");
 
 /***/ })
 

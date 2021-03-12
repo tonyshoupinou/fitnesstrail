@@ -1,7 +1,5 @@
-import 'materialize-css';
+import "materialize-css";
+import {displayHomeComponent} from './home/home';
 
-// navbar
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems);
-});
+
+displayHomeComponent("main");
