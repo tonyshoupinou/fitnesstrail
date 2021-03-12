@@ -1,8 +1,6 @@
 import 'materialize-css';
 import { displayTrailSelectComponent } from './trailselect/trailselect';
+import {displayHomeComponent} from './home/home';
 
-
-// navbar
-M.Sidenav.init(document.querySelectorAll('.sidenav'));
-
-displayTrailSelectComponent ("main")
+displayTrailSelectComponent ("main");
+displayHomeComponent("main");
