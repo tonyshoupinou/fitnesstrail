@@ -1,3 +1,5 @@
+import { initMap } from "./initMap";
+
 export const displayMap = () => {
   const body = document.querySelector('body');
   const script = document.createElement('script');
@@ -9,26 +11,4 @@ export const displayMap = () => {
 
   script.onload = initMap;
   body.appendChild(script);
-}
-
-const initMap = () => {
-  const showPosition = (position) => {
-    let coords = { lat: position.coords.latitude, lng: position.coords.longitude};
-
-    const map = new google.maps.Map(document.querySelector(".display-map"), {
-      zoom: 15,
-      center: coords,
-    });
-
-    const marker = new google.maps.Marker({
-      position: coords,
-      map: map,
-    });
-  }
-              
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    map.innerHTML = "Geolocation is not supported by this browser.";
-  }
 }
