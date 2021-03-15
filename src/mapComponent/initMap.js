@@ -28,7 +28,7 @@ export const initMap = () => {
     const showLocation = (position) => {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
-      console.log("Latitude : " + latitude + " Longitude: " + longitude);
+      alert("Latitude : " + latitude + " Longitude: " + longitude);
     }
     
     const errorHandler = (err) => {
