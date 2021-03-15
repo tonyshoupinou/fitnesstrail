@@ -18,6 +18,8 @@ export const initMap = () => {
         map: map,
 
         // recentrer carte et evoluer position marker
+
+        
       });
 
       let options = {enableHighAccuracy: true};
