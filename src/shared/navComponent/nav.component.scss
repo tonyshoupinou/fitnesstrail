@@ -1,0 +1,41 @@
+nav {
+    background-color: #1e88e5;
+    position: fixed;
+
+    .nav-back {
+        a {
+            padding: 0;
+        }
+
+        i {
+            display: inline-block;
+            font-size: 3rem;
+        }
+    } 
+    
+    .back-home {
+        a {
+            padding: 0;
+            margin-left: 15px;
+
+            :hover {
+                background-color: none;
+            }
+        }
+
+        i {
+            display: inline-block;
+            font-size: 2rem;
+        }
+    } 
+
+    .name {
+        font-size: 1.2em;
+    }
+    
+    .sidenav-trigger {
+        float: right;
+    }
+
+    overflow: hidden;
+}
