@@ -7,8 +7,6 @@ import { displayHomeComponent } from './home/home';
 import { displayModalComponent, id} from './shared/modals/modals';
 import { Loader } from "@googlemaps/js-api-loader"
 
-displayTrailSelectComponent ("main");
-// displayHomeComponent("main");
 // displayMapComponent('main');
 // displayMap();
 
