@@ -6,11 +6,11 @@ import { homeRedirection } from './shared/navComponent/nav-routing';
 import { displayTrailSelectComponent } from './trailselect/trailselect';
 import {displayHomeComponent} from './home/home';
 
-displayTrailSelectComponent ("main");
+// displayTrailSelectComponent ("main");
 displayHomeComponent("main");
-displayTrailSelectComponent ("main");
-displayMapComponent('main');
-displayMap();
+// displayTrailSelectComponent ("main");
+// displayMapComponent('main');
+// displayMap();
 
 // navbar
 displayNav();
