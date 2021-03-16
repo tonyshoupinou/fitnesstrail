@@ -1,22 +1,20 @@
 import 'materialize-css';
-import { displayMapComponent } from './mapComponent/map.component';
-import { displayMap } from './mapComponent/map';
 import { displayNav } from './shared/navComponent/nav.component';
+import { navRouting } from './shared/navComponent/nav-routing';
 import { displayTrailSelectComponent, clicButtonParcours1, clicButtonParcours2, clicButtonParcours3 } from './trailselect/trailselect';
-import { displayHomeComponent } from './home/home';
 import { displayModalComponent, id} from './shared/modals/modals';
 import { Loader } from "@googlemaps/js-api-loader"
 
-// displayMapComponent('main');
-// displayMap();
-
 // navbar
 displayNav();
+navRouting();
 
+// nav specifique trailselect
 clicButtonParcours1();
 clicButtonParcours2();
 clicButtonParcours3();
 
+// test map
 let map, infoWindow;
 
 const addMarkers = (coordsmarker) => {
