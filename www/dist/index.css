@@ -106,35 +106,17 @@ body {
 .btn {
   margin-bottom: 5px; }
 
-h1 {
-  width: 100%;
-  background-color: #a558ec;
-  text-align: center;
-  color: #3d239b;
-  padding: 12px; }
-
-p {
-  width: 100%;
-  font-size: 1em;
-  text-align: center;
-  color: #3d239b;
-  margin-bottom: 50px;
-  height: auto; }
-
 .home-row {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 50px; }
 
-ul {
-  width: 130%;
-  text-align: center; }
-
-.form {
-  margin-bottom: 50px;
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 320px;
   margin-top: 130px; }
-
-.btn-select {
-  margin-bottom: 50px; }
 
 .screen-map {
   height: 100vh;
