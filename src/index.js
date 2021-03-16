@@ -5,3 +5,4 @@ import { navRouting } from './shared/navComponent/nav-routing';
 // navbar
 displayNav();
 navRouting();
+

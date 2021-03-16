@@ -4,7 +4,6 @@ import { displayTrailSelectComponent } from "../../trailselect/trailselect";
 
 export const navRouting = () => {
     
-    
     const homeLink = document.querySelector('.home-link');
     const logoLink = document.querySelector('.logo-link');
     const selectLink = document.querySelector('.select-link');
@@ -12,8 +11,10 @@ export const navRouting = () => {
     const homeLink2 = document.querySelector('.home-link2');
     const selectLink2 = document.querySelector('.select-link2');
     const mapLink2 = document.querySelector('.map-link2');
-    
+
+   
     homeLink.onclick = (e) => {
+        console.log(homeLink)
         e.preventDefault();
         displayHomeComponent('main');
     }
