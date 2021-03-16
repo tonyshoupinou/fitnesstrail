@@ -1,4 +1,27 @@
-.btn {
+.buttonparcours1 {
     margin-bottom: 5px;
-    // WARNING : cela affecte TOUS les boutons en ajoutant une marge de 5px en dessous //
-}
+};
+.buttonparcours2 {
+    margin-bottom: 5px;
+};
+.buttonparcours3 {
+    margin-bottom: 5px;
+};   
+/*
+  When creating your CSS selector,
+  change "brown" to something of your choosing
+  */
+.waves-effect.waves-brown .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+    background-color: rgba(121, 85, 72, 0.65);
+};
+.previewparcours{
+    margin-top: 6em;
+    margin-bottom: 2em;
+};
+#map {
+    height: 400px;
+    margin-bottom: 2em;
+  }
+  
