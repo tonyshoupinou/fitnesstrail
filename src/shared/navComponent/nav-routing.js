@@ -1,6 +1,6 @@
 import { displayHomeComponent } from "../../home/home";
 import { displayMapComponent } from "../../mapComponent/map.component";
-import { displayTrailSelectComponent, clicButtonParcours1, clicButtonParcours2, clicButtonParcours3 } from '../../trailselect/trailselect';
+import { displayTrailSelectComponent } from '../../trailselect/trailselect';
 
 export const navRouting = () => {
     
@@ -24,9 +24,6 @@ export const navRouting = () => {
     selectLink.onclick = (e) => {
         e.preventDefault();
         displayTrailSelectComponent('main');
-        clicButtonParcours1();
-        clicButtonParcours2();
-        clicButtonParcours3();
     }
     mapLink.onclick = (e) => {
         e.preventDefault();
@@ -39,9 +36,6 @@ export const navRouting = () => {
     selectLink2.onclick = (e) => {
         e.preventDefault();
         displayTrailSelectComponent('main');
-        clicButtonParcours1();
-        clicButtonParcours2();
-        clicButtonParcours3();
     }
     mapLink2.onclick = (e) => {
         e.preventDefault();
