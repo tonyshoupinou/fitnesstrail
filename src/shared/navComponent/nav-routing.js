@@ -12,7 +12,6 @@ export const navRouting = () => {
     const selectLink2 = document.querySelector('.select-link2');
     const mapLink2 = document.querySelector('.map-link2');
 
-   
     homeLink.onclick = (e) => {
         console.log(homeLink)
         e.preventDefault();
@@ -39,6 +38,18 @@ export const navRouting = () => {
         displayTrailSelectComponent('main');
     }
     mapLink2.onclick = (e) => {
+        e.preventDefault();
+        displayMapComponent('main');
+    }
+    logoLink.onclick = (e) => {
+        e.preventDefault();
+        displayHomeComponent('main');
+    }
+    selectLink.onclick = (e) => {
+        e.preventDefault();
+        displayTrailSelectComponent('main');
+    }
+    mapLink.onclick = (e) => {
         e.preventDefault();
         displayMapComponent('main');
     }

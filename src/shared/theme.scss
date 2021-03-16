@@ -1,10 +1,11 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
     /* A FAIRE Definition des tailles et couleurs de police */
-    background-image: url("./../assets/img/Background.jpg");
+    background-image: url("./../assets/img/Background2.jpg");
     background-position: center;
     background-origin: content-box;
     background-repeat: no-repeat;
-    // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    background-size: contain auto;
     background-color :#c3e59b;
+        // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
 }
