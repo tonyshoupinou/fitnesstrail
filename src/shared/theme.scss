@@ -1,11 +1,21 @@
-body {
+body, html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;
-    /* A FAIRE Definition des tailles et couleurs de police */
-    background-image: url("./../assets/img/Background2.jpg");
-    background-position: center;
-    background-origin: content-box;
-    background-repeat: no-repeat;
-    background-size: contain auto;
-    background-color :#c3e59b;
-        // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    height: 100%;
 }
+
+.bg {
+    // The image used
+    background-image: url("./../assets/img/Background2.jpg");
+  
+    // Full height
+    height: 100%;
+  
+    // Centering and scaling Background image
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    // alternative color or gradient if image load fails
+    background-color :#c3e59b;
+    // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+  }

@@ -11,34 +11,3 @@ export const displayHomeComponent = (selector) => {
         return false;
     }
 };
-
-
-// export const displayGoHome = (element) => {
-//     element.innerHTML = html;
-
-// const monAutrePage = (name) => {
-//     console.log("name")
-
-// element.submit = () => {    
-//     monAutrePage("name");
-
-// const myForm = document.querySelector(".monForm");
-
-// myForm.onsubmit = (e) => {
-//         alert('En route');
-//         displayLogin(e)
-//         return false;
-
-
-// const additionName = (a) => {
-//     const result = a;
-//     return result;
-
-// }
-// const element = document.querySelector("main")
-// const resultName = additionName(a);
-
-// }
-
-
-// }
