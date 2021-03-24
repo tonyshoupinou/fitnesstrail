@@ -5,8 +5,11 @@ import { Loader } from "@googlemaps/js-api-loader"
 
 export const displayTrailSelectComponent = (selector) => {
     document.querySelector(selector).innerHTML = html;
+    clicButtonParcours1();
+    clicButtonParcours2();
+    clicButtonParcours3();
 };
-export const clicButtonParcours1 = () => {
+const clicButtonParcours1 = () => {
     const btnp1 = document.querySelector('.buttonparcours1'); 
     btnp1.onclick = (e) => {
         e.preventDefault();
@@ -14,7 +17,7 @@ export const clicButtonParcours1 = () => {
         displayModalComponent(toto);
     };
 };
-export const clicButtonParcours2 = () => {
+const clicButtonParcours2 = () => {
     const btnp2 = document.querySelector('.buttonparcours2');
     btnp2.onclick = (e) => {
         e.preventDefault();
@@ -22,7 +25,7 @@ export const clicButtonParcours2 = () => {
         displayModalComponent(toto);
     };
 };
-export const clicButtonParcours3 = () => {
+const clicButtonParcours3 = () => {
     const btnp3 = document.querySelector('.buttonparcours3'); 
     btnp3.onclick = (e) => {
         e.preventDefault();

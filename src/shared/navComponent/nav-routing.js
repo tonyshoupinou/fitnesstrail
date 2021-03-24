@@ -1,62 +1,41 @@
 import { displayHomeComponent } from "../../home/home";
-import { displayMapComponent } from "../../mapComponent/map.component";
-import { displayTrailSelectComponent, clicButtonParcours1, clicButtonParcours2, clicButtonParcours3 } from '../../trailselect/trailselect';
+import { GoogleMapComponent } from "../../map/googleMap/google-map.component";
+import { MapComponent } from "../../map/map.component";
+import { ResultComponent } from "../../result/result.component";
+import { displayTrailSelectComponent } from '../../trailselect/trailselect';
 
 export const navRouting = () => {
-    
-    const homeLink = document.querySelector('.home-link');
-    const logoLink = document.querySelector('.logo-link');
-    const selectLink = document.querySelector('.select-link');
-    const mapLink = document.querySelector('.map-link');
-    const homeLink2 = document.querySelector('.home-link2');
-    const selectLink2 = document.querySelector('.select-link2');
-    const mapLink2 = document.querySelector('.map-link2');
+    const mapLink = document.querySelectorAll(".map-link");
+    mapLink.forEach((btn)=> {
+        btn.onclick = (e) => {
+            e.preventDefault();
+            new MapComponent("main");
+        }
+    });
 
-    homeLink.onclick = (e) => {
-        console.log(homeLink)
-        e.preventDefault();
-        displayHomeComponent('main');
-    }
-    logoLink.onclick = (e) => {
-        e.preventDefault();
-        displayHomeComponent('main');
-    }
-    selectLink.onclick = (e) => {
-        e.preventDefault();
-        displayTrailSelectComponent('main');
-        clicButtonParcours1();
-        clicButtonParcours2();
-        clicButtonParcours3();
-    }
-    mapLink.onclick = (e) => {
-        e.preventDefault();
-        displayMapComponent('main');
-    }
-    homeLink2.onclick = (e) => {
-        e.preventDefault();
-        displayHomeComponent('main');
-    }
-    selectLink2.onclick = (e) => {
-        e.preventDefault();
-        displayTrailSelectComponent('main');
-        clicButtonParcours1();
-        clicButtonParcours2();
-        clicButtonParcours3();
-    }
-    mapLink2.onclick = (e) => {
-        e.preventDefault();
-        displayMapComponent('main');
-    }
-    logoLink.onclick = (e) => {
-        e.preventDefault();
-        displayHomeComponent('main');
-    }
-    selectLink.onclick = (e) => {
-        e.preventDefault();
-        displayTrailSelectComponent('main');
-    }
-    mapLink.onclick = (e) => {
-        e.preventDefault();
-        displayMapComponent('main');
-    }
+    const trailSelect = document.querySelectorAll('.select-link');
+    trailSelect.forEach( (btn) => {
+        btn.onclick = (e) => {
+            e.preventDefault();
+            displayTrailSelectComponent('main');
+        }
+    });
+
+    const homeLink = document.querySelectorAll('.home-link');
+    homeLink.forEach((btn) => {
+        btn.onclick = (e) => {
+            e.preventDefault();
+            displayHomeComponent('main');
+        }
+    });
+
+    const resultLink = document.querySelectorAll('.result-link');
+    resultLink.forEach((btn) => {
+        btn.onclick = (e) => {
+            e.preventDefault();
+            new ResultComponent('main');
+        }
+    });
+
+    displayHomeComponent('main');
 }
