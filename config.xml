@@ -15,6 +15,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <access origin="https://maps.googleapis.com/" />
+    <access origin="https://maps.google.com" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -141,9 +142,8 @@
         <preference name="AutoHideSplashScreen" value="true" />
         <preference name="FadeSplashScreen" value="false"/>
         <preference name="FadeSplashScreenDuration" value="750"/>   
-        <access origin="http://maps.google.com" />
         <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
-            <string>need location access to find things nearby</string>
+        <string>need location access to find things nearby</string>
         </edit-config>
 
 </widget>

@@ -22,14 +22,14 @@
         Junior Developer
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <access origin="http://maps.google.com" />
+    <access origin="https://maps.googleapis.com/" />
+    <access origin="https://maps.google.com" />
     <edit-config file="*-Info.plist" mode="merge" target="NSLocationWhenInUseUsageDescription">
         <string>need location access to find things nearby</string>
     </edit-config>
