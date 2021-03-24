@@ -1,5 +1,5 @@
 import { User } from '../shared/models/user.model';
-import { UserService } from '../shared/services/user.services';
+import { UserService } from '../shared/services/user.service';
 import { TrailSelectComponent } from '../trailselect/trailselect.component';
 import homehtml from "./home.html";
 

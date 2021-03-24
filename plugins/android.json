@@ -1,0 +1,25 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.tony.fitnesstrail"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.tony.fitnesstrail"
+    },
+    "cordova-plugin-geolocation": {
+      "GPS_REQUIRED": "false",
+      "PACKAGE_NAME": "io.tony.fitnesstrail"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.tony.fitnesstrail"
+    }
+  },
+  "dependent_plugins": {}
+}

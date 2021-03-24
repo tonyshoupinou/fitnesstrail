@@ -1,5 +1,5 @@
 import { User } from '../shared/models/user.model';
-import { UserService } from '../shared/services/user.services';
+import { UserService } from '../shared/services/user.service';
 import { ModalComponent } from './modals/modal.component';
 import htmltrailselect from './trailselect.component.html';
 // import { Loader } from "@googlemaps/js-api-loader"

@@ -1,7 +1,7 @@
 import { MapComponent } from '../../map/map.component';
-import html from './modals.html';
-import html2 from './modals2.html';
-import html3 from './modals3.html';
+import html from './modal.html';
+import html2 from './modal2.html';
+import html3 from './modal3.html';
 
 export const displayModalComponent = (modalID) => {
 

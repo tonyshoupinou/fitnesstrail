@@ -1,4 +1,4 @@
-import { displayMapComponent } from '../../mapComponent/map.component';
+import { MapComponent } from '../../map/map.component';
 import { ParcoursService } from '../../shared/services/parcours.service';
 import html from './modal.html';
 import html2 from './modal2.html';
@@ -29,13 +29,12 @@ export class ModalComponent{
         const elems = document.querySelectorAll('.modal');
         const instances = M.Modal.init(elems);
         this.selectedParcours();
-        console.log(ParcoursService.getParcours());
     }    
     
     selectedParcours() {
         document.querySelector('.parcoursID').onclick = (e) => {
             e.preventDefault();
-            displayMapComponent("main");
+            new MapComponent("main");
         }
     }
 }
