@@ -5,9 +5,9 @@ export class User {
     /**
      * 
      * @param {String} name 
-     * @param {Parcours} selectedParcours 
+     * @param {Parcours} parcours 
      */
-    constructor(name, selectedParcours){
+    constructor(name, parcours){
 
         /**
          * @type {String}
@@ -17,8 +17,6 @@ export class User {
         /**
          * @type {Parcours}
          */
-        this.parcours = selectedParcours;
-        // this.selectedParcours = selectedParcours;
-    }
-    
+        this.parcours = parcours;
+    }   
 }

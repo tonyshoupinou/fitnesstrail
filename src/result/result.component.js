@@ -2,6 +2,7 @@ import htmlresults from './result.component.html';
 import { UserService } from '../shared/services/user.services'
 import { ParcoursService } from '../shared/services/parcours.service';
 import { Parcours } from '../shared/models/parcours.model';
+
 export class ResultComponent {
     
 
