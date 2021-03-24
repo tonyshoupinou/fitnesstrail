@@ -1,14 +1,12 @@
 import 'materialize-css';
-import { displayNav } from './shared/navComponent/nav.component';
-import { navRouting } from './shared/navComponent/nav-routing';
+import { NavBarComponent } from './shared/navComponent/nav.component';
 
-// Device ready ?
-if (window.cordova) {
-    window.document.addEventListener("deviceready", () => {
-        displayNav();
-        navRouting();
-        });
+if (!window.cordova) {
+    alert("je suis sur browser")
+    new NavBarComponent('header');
 } else {
-    displayNav();
-    navRouting();
+    window.document.addEventListener("deviceready", () => {
+        alert("je suis sur mobile");
+        new NavBarComponent('header');
+    });
 }

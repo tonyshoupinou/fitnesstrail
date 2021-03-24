@@ -7,9 +7,6 @@ body, html {
     // The image used
     background-image: url("./../assets/img/Background2.jpg");
   
-    // Full height
-    height: 100%;
-  
     // Centering and scaling Background image
     background-position: center;
     background-repeat: no-repeat;
@@ -17,5 +14,6 @@ body, html {
     
     // alternative color or gradient if image load fails
     background-color :#c3e59b;
-    // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
-  }
+    height: 100vh;
+        // background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+}

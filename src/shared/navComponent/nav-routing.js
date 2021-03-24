@@ -1,15 +1,14 @@
 import { HomeComponent } from "../../home/home";
-import { displayMapComponent } from "../../mapComponent/map.component";
 import { TrailSelectComponent } from '../../trailselect/trailselect.component';
 import { ResultComponent } from '../../result/result.component';
-
+import { MapComponent } from "../../map/map.component";
 
 export const navRouting = () => {
     const mapLink = document.querySelectorAll(".map-link");
     mapLink.forEach((btn)=> {
         btn.onclick = (e) => {
             e.preventDefault();
-            displayMapComponent("main");
+            new MapComponent("main");
         };
     });
     
