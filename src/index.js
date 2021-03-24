@@ -1,13 +1,24 @@
 import 'materialize-css';
 import { displayNav } from './shared/navComponent/nav.component';
 import { navRouting } from './shared/navComponent/nav-routing';
-import { displayTrailSelectComponent, clicButtonParcours1, clicButtonParcours2, clicButtonParcours3 } from './trailselect/trailselect';
-import { displayModalComponent, id} from './shared/modals/modals';
-import { Loader } from "@googlemaps/js-api-loader"
+import { UserService } from './shared/services/user.services';
+import { ParcoursService } from './shared/services/parcours.service';
+import { displayMapComponent } from './mapComponent/map.component';
+
+// Device ready ?
+if (window.cordova) {
+    window.document.addEventListener("deviceready", () => {
+        displayNav();
+        navRouting();
+        });
+} else {
+    displayNav();
+    navRouting();
+}
+// import { Loader } from "@googlemaps/js-api-loader"
 
 // navbar
-displayNav();
-navRouting();
+
 
 // test map
 // let map, infoWindow;
